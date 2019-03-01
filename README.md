@@ -1,1 +1,0 @@
-# pic10c_assignment2
