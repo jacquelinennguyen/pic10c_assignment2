@@ -553,6 +553,23 @@
         </widget>
        </item>
        <item>
+        <widget class="QLabel" name="finalProject">
+         <property name="text">
+          <string>Final Project</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="finalProject_horizontalSlider">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="finalProject_spinBox"/>
+       </item>
+       <item>
         <widget class="QRadioButton" name="SchemaAButton_2">
          <property name="text">
           <string>Schema A</string>
@@ -563,6 +580,35 @@
         <widget class="QRadioButton" name="SchemaBButton_2">
          <property name="text">
           <string>Schema B</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_10">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>320</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="GradeLayout_2">
+       <item>
+        <widget class="QLabel" name="OverallGrade_2">
+         <property name="text">
+          <string>Overall Grade:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="CalculatedGrade_2">
+         <property name="text">
+          <string>0.0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
         </widget>
        </item>
