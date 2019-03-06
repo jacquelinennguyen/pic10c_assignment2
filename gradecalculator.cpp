@@ -95,10 +95,10 @@ void GradeCalculator::ComputePIC10CGrade() {
 
     double e1 = ui->Midterm1spinBox_2->value();
 
-    double e3 = ui->Finalspinbox_2->value();
+    double e2 = ui->Finalspinbox_2->value();
 
     double hw_sum = h1+h2+h3;
     double overall = 0;
 
-    //if (ui->SchemaAButton_2->clicked())
+    if (ui->SchemaAButton_2->isChecked()) overall = .15*hw_sum + .25*e1 + .3*e2;
 }
