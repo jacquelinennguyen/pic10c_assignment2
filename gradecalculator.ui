@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="PIC10B">
      <attribute name="title">
@@ -398,6 +398,176 @@
      <attribute name="title">
       <string>PIC10C</string>
      </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>251</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="HWs_pic10c">
+       <item>
+        <layout class="QHBoxLayout" name="HW1Group_2">
+         <item>
+          <widget class="QLabel" name="HW1_2">
+           <property name="text">
+            <string>HW1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="HW1Slider_2">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="HW1Spin_2">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="HW2Group_2">
+         <item>
+          <widget class="QLabel" name="HW2_2">
+           <property name="text">
+            <string>HW2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="HW2Slider_2">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="HW2Spin_2">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLabel" name="HW3_2">
+           <property name="text">
+            <string>HW3</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="HW3Slider_2">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="HW3Spin_2">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>10</y>
+        <width>241</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="Exams_2">
+       <item>
+        <widget class="QLabel" name="Midterm1Label_2">
+         <property name="text">
+          <string>Midterm </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="Midterm1Slider_2">
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="Midterm1spinBox_2">
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="FinalLabel_2">
+         <property name="text">
+          <string>Final</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="FinalSlider_2">
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="Finalspinbox_2">
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="SchemaAButton_2">
+         <property name="text">
+          <string>Schema A</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="SchemaBButton_2">
+         <property name="text">
+          <string>Schema B</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </widget>
   </widget>

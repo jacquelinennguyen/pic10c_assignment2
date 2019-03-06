@@ -36,6 +36,35 @@ GradeCalculator::GradeCalculator(QWidget *parent) :
 
     ui->SchemaAButton->setChecked(1);
 
+    QObject::connect( ui->HW1Spin_2,SIGNAL( valueChanged(int) ),
+                      this, SLOT( ComputePIC10CGrade() )  );
+    QObject::connect( ui->HW2Spin_2,SIGNAL( valueChanged(int) ),
+                      this, SLOT( ComputePIC10CGrade() ) );
+    QObject::connect( ui->HW3Spin_2,SIGNAL( valueChanged(int) ),
+                      this, SLOT( ComputePIC10CGrade() )  );
+    QObject::connect( ui->HW4Spin_2,SIGNAL( valueChanged(int) ),
+                      this, SLOT( ComputePIC10CGrade() ) );
+    QObject::connect( ui->HW5Spin_2,SIGNAL( valueChanged(int) ),
+                      this, SLOT( ComputePIC10CGrade() )  );
+    QObject::connect( ui->HWSpin6_2,SIGNAL( valueChanged(int) ),
+                      this, SLOT( ComputePIC10CGrade() ) );
+    QObject::connect( ui->HW7Spin_2,SIGNAL( valueChanged(int) ),
+                      this, SLOT( ComputePIC10CGrade() )  );
+    QObject::connect( ui->HW8Spin_2,SIGNAL( valueChanged(int) ),
+                      this, SLOT( ComputePIC10CGrade() ) );
+    QObject::connect( ui->Midterm1spinBox_2,SIGNAL( valueChanged(int) ),
+                      this, SLOT( ComputePIC10CGrade() )  );
+    QObject::connect( ui->Midterm2spinbox_2,SIGNAL( valueChanged(int) ),
+                      this, SLOT( ComputePIC10CGrade() ) );
+    QObject::connect( ui->Finalspinbox_2,SIGNAL( valueChanged(int) ),
+                      this, SLOT( ComputePIC10CGrade() ) );
+    QObject::connect( ui->SchemaAButton_2,SIGNAL( clicked() ),
+                      this, SLOT( ComputePIC10CGrade() ) );
+    QObject::connect( ui->SchemaBButton_2,SIGNAL( clicked() ),
+                      this, SLOT( ComputePIC10CGrade() ) );
+
+    ui->SchemaAButton_2->setChecked(1);
+
 }
 
 GradeCalculator::~GradeCalculator()
@@ -69,4 +98,8 @@ void GradeCalculator::ComputePIC10BGrade() {
     }
     QString text(QString::number(overall));
     ui->CalculatedGrade->setText(text);
+}
+
+void GradeCalculator::ComputePIC10CGrade() {
+
 }
