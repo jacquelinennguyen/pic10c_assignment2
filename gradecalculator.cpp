@@ -42,20 +42,8 @@ GradeCalculator::GradeCalculator(QWidget *parent) :
                       this, SLOT( ComputePIC10CGrade() ) );
     QObject::connect( ui->HW3Spin_2,SIGNAL( valueChanged(int) ),
                       this, SLOT( ComputePIC10CGrade() )  );
-    QObject::connect( ui->HW4Spin_2,SIGNAL( valueChanged(int) ),
-                      this, SLOT( ComputePIC10CGrade() ) );
-    QObject::connect( ui->HW5Spin_2,SIGNAL( valueChanged(int) ),
-                      this, SLOT( ComputePIC10CGrade() )  );
-    QObject::connect( ui->HWSpin6_2,SIGNAL( valueChanged(int) ),
-                      this, SLOT( ComputePIC10CGrade() ) );
-    QObject::connect( ui->HW7Spin_2,SIGNAL( valueChanged(int) ),
-                      this, SLOT( ComputePIC10CGrade() )  );
-    QObject::connect( ui->HW8Spin_2,SIGNAL( valueChanged(int) ),
-                      this, SLOT( ComputePIC10CGrade() ) );
     QObject::connect( ui->Midterm1spinBox_2,SIGNAL( valueChanged(int) ),
                       this, SLOT( ComputePIC10CGrade() )  );
-    QObject::connect( ui->Midterm2spinbox_2,SIGNAL( valueChanged(int) ),
-                      this, SLOT( ComputePIC10CGrade() ) );
     QObject::connect( ui->Finalspinbox_2,SIGNAL( valueChanged(int) ),
                       this, SLOT( ComputePIC10CGrade() ) );
     QObject::connect( ui->SchemaAButton_2,SIGNAL( clicked() ),
@@ -101,5 +89,16 @@ void GradeCalculator::ComputePIC10BGrade() {
 }
 
 void GradeCalculator::ComputePIC10CGrade() {
+    double h1 = ui->HW1Spin_2->value();
+    double h2 = ui->HW2Spin_2->value();
+    double h3 = ui->HW3Spin_2->value();
 
+    double e1 = ui->Midterm1spinBox_2->value();
+
+    double e3 = ui->Finalspinbox_2->value();
+
+    double hw_sum = h1+h2+h3;
+    double overall = 0;
+
+    //if (ui->SchemaAButton_2->clicked())
 }
