@@ -20,7 +20,8 @@ private:
     Ui::GradeCalculator *ui;
 
 private slots:
-    void ComputeGrade();
+    void ComputePIC10BGrade();
+    void ComputePIC10CGrade();
     //void AssignmentChanged();
 
 };
