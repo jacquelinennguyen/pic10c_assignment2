@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GradeCalculator</class>
+ <widget class="QMainWindow" name="GradeCalculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>535</width>
+    <height>443</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GradeCalculator</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>521</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="PIC10B">
+     <attribute name="title">
+      <string>PIC10B</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>320</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="GradeLayout">
+       <item>
+        <widget class="QLabel" name="OverallGrade">
+         <property name="text">
+          <string>Overall Grade:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="CalculatedGrade">
+         <property name="text">
+          <string>0.0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>10</y>
+        <width>241</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="Exams">
+       <item>
+        <widget class="QLabel" name="Midterm1Label">
+         <property name="text">
+          <string>Midterm 1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="Midterm1Slider">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="Midterm1spinBox"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="Midterm2Label">
+         <property name="text">
+          <string>Midterm 2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="Midterm2Slider">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="Midterm2spinbox"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="FinalLabel">
+         <property name="text">
+          <string>Final</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="FinalSlider">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="Finalspinbox"/>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="SchemaAButton">
+         <property name="text">
+          <string>Schema A</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="SchemaBButton">
+         <property name="text">
+          <string>Schema B</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>251</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="HWs">
+       <item>
+        <layout class="QHBoxLayout" name="HW1Group">
+         <item>
+          <widget class="QLabel" name="HW1">
+           <property name="text">
+            <string>HW1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="HW1Slider">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="HW1Spin">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="HW2Group">
+         <item>
+          <widget class="QLabel" name="HW2">
+           <property name="text">
+            <string>HW2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="HW2Slider">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="HW2Spin">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="HW3">
+           <property name="text">
+            <string>HW3</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="HW3Slider">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="HW3Spin">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="HW5">
+           <property name="text">
+            <string>HW4</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="HW5Slider">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="HW5Spin">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QLabel" name="HW6">
+           <property name="text">
+            <string>HW5</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="HW6Slider">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="HWSpin6">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLabel" name="HW7">
+           <property name="text">
+            <string>HW6</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="HW7Slider">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="HW7Spin">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QLabel" name="HW8">
+           <property name="text">
+            <string>HW7</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="HW8Slider">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="HW8Spin">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="HW4">
+           <property name="text">
+            <string>HW8</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="HW4Slider">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="HW4Spin">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PIC10C">
+     <attribute name="title">
+      <string>PIC10C</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>535</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>HW1Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW1Spin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>235</x>
+     <y>95</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW1Spin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW1Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>249</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>134</x>
+     <y>97</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW2Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW2Spin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>186</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW2Spin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW2Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>238</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW3Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW3Spin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>187</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW3Spin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW3Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>239</x>
+     <y>187</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>185</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW5Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW5Spin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>191</x>
+     <y>219</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>236</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW5Spin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW5Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>233</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>185</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW6Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HWSpin6</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>241</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HWSpin6</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW6Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>269</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>190</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW7Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW7Spin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>193</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW7Spin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW7Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>189</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW8Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW8Spin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>238</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW8Spin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW8Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>240</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>348</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW4Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW4Spin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>236</x>
+     <y>386</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HW4Spin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>HW4Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>243</x>
+     <y>394</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>193</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
