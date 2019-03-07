@@ -80,7 +80,8 @@ void GradeCalculator::ComputePIC10BGrade() {
     double hw_sum = h1+h2+h3+h4+h5+h6+h7+h8;
     double overall = 0;
 
-    if (ui->SchemaAButton->isChecked()) overall = .25*(hw_sum/8) + .2*e1 + .2*e2 + .35*e3;
+    if (ui->SchemaAButton->isChecked())
+        overall = .25*(hw_sum/8) + .2*e1 + .2*e2 + .35*e3;
     if (ui->SchemaBButton->isChecked()) {
         double higher_exam = e1;
         if (e1<e2) higher_exam = e2;
@@ -102,8 +103,10 @@ void GradeCalculator::ComputePIC10CGrade() {
     double hw_sum = h1+h2+h3;
     double overall = 0;
 
-    if (ui->SchemaAButton_2->isChecked()) overall = .15*hw_sum/3 + .25*e1 + .3*e2 + .35*p;
-    if (ui->SchemaBButton_2->isChecked()) overall = .13*hw_sum/3 + .5*e2 + .35*p;
+    if (ui->SchemaAButton_2->isChecked())
+        overall = .15*hw_sum/3 + .25*e1 + .3*e2 + .35*p;
+    if (ui->SchemaBButton_2->isChecked())
+        overall = .13*hw_sum/3 + .5*e2 + .35*p;
 
     ui->CalculatedGrade_2->setText(QString::number(overall));
 }

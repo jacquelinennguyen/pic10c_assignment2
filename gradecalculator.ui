@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="PIC10B">
      <attribute name="title">
@@ -561,13 +561,20 @@
        </item>
        <item>
         <widget class="QSlider" name="finalProject_horizontalSlider">
+         <property name="maximum">
+          <number>100</number>
+         </property>
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QSpinBox" name="finalProject_spinBox"/>
+        <widget class="QSpinBox" name="finalProject_spinBox">
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QRadioButton" name="SchemaAButton_2">
