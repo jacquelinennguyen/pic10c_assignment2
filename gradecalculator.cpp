@@ -102,8 +102,8 @@ void GradeCalculator::ComputePIC10CGrade() {
     double hw_sum = h1+h2+h3;
     double overall = 0;
 
-    if (ui->SchemaAButton_2->isChecked()) overall = .15*hw_sum + .25*e1 + .3*e2 + .35*p;
-    if (ui->SchemaBButton_2->isChecked()) overall = .13*hw_sum + .5*e2 + .35*p;
+    if (ui->SchemaAButton_2->isChecked()) overall = .15*hw_sum/3 + .25*e1 + .3*e2 + .35*p;
+    if (ui->SchemaBButton_2->isChecked()) overall = .13*hw_sum/3 + .5*e2 + .35*p;
 
     ui->CalculatedGrade_2->setText(QString::number(overall));
 }
