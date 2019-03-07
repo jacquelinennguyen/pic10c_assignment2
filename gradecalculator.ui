@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="PIC10B">
      <attribute name="title">
@@ -626,6 +626,14 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionReset"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuOptions"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -636,6 +644,16 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
@@ -1000,11 +1018,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>209</x>
-     <y>135</y>
+     <y>122</y>
     </hint>
     <hint type="destinationlabel">
      <x>242</x>
-     <y>136</y>
+     <y>123</y>
     </hint>
    </hints>
   </connection>
@@ -1016,11 +1034,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>240</x>
-     <y>143</y>
+     <y>130</y>
     </hint>
     <hint type="destinationlabel">
      <x>198</x>
-     <y>140</y>
+     <y>127</y>
     </hint>
    </hints>
   </connection>
@@ -1032,11 +1050,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>209</x>
-     <y>249</y>
+     <y>209</y>
     </hint>
     <hint type="destinationlabel">
      <x>228</x>
-     <y>244</y>
+     <y>204</y>
     </hint>
    </hints>
   </connection>
@@ -1048,11 +1066,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>229</x>
-     <y>253</y>
+     <y>213</y>
     </hint>
     <hint type="destinationlabel">
      <x>203</x>
-     <y>250</y>
+     <y>210</y>
     </hint>
    </hints>
   </connection>
@@ -1064,11 +1082,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>207</x>
-     <y>356</y>
+     <y>290</y>
     </hint>
     <hint type="destinationlabel">
      <x>225</x>
-     <y>356</y>
+     <y>290</y>
     </hint>
    </hints>
   </connection>
@@ -1080,11 +1098,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>228</x>
-     <y>365</y>
+     <y>299</y>
     </hint>
     <hint type="destinationlabel">
      <x>211</x>
-     <y>362</y>
+     <y>296</y>
     </hint>
    </hints>
   </connection>

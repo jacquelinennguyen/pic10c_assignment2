@@ -22,8 +22,8 @@ private:
 private slots:
     void ComputePIC10BGrade();
     void ComputePIC10CGrade();
-    //void AssignmentChanged();
-
+    void on_actionQuit_triggered();
+    void on_actionReset_triggered();
 };
 
 #endif // GRADECALCULATOR_H

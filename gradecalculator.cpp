@@ -107,3 +107,28 @@ void GradeCalculator::ComputePIC10CGrade() {
 
     ui->CalculatedGrade_2->setText(QString::number(overall));
 }
+
+void GradeCalculator::on_actionQuit_triggered()
+{
+    close();
+}
+
+void GradeCalculator::on_actionReset_triggered()
+{
+    ui->HW1Spin->setValue(0);
+    ui->HW2Spin->setValue(0);
+    ui->HW3Spin->setValue(0);
+    ui->HW4Spin->setValue(0);
+    ui->HW5Spin->setValue(0);
+    ui->HWSpin6->setValue(0);
+    ui->HW7Spin->setValue(0);
+    ui->HW8Spin->setValue(0);
+    ui->Midterm1spinBox->setValue(0);
+    ui->Midterm2spinbox->setValue(0);
+    ui->Midterm1spinBox_2->setValue(0);
+    ui->Finalspinbox->setValue(0);
+    ui->Finalspinbox_2->setValue(0);
+    ui->HW1Spin_2->setValue(0);
+    ui->HW2Spin_2->setValue(0);
+    ui->HW3Spin_2->setValue(0);
+}
